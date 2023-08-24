@@ -11,6 +11,8 @@
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.36",
     "@googlemaps/js-api-loader": "^1.16.2",
+    "@nestjs/platform-socket.io": "^10.2.1",
+    "@nestjs/websockets": "^10.2.1",
     "@types/google.maps": "^3.53.6",
     "@types/lodash": "^4.14.197",
     "@types/node": "20.5.3",
@@ -22,6 +24,7 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "socket.io-client": "^4.7.2",
     "swr": "^2.2.1",
     "typescript": "5.1.6"
   }

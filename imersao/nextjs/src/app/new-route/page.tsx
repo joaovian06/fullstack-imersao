@@ -4,7 +4,6 @@ import type { DirectionsResponseData, FindPlaceFromTextResponseData } from "@goo
 import { FormEvent, useRef, useState } from "react";
 import { useMap } from "../hooks/useMap";
 
-
 export function NewRoutePage() {
 
   const mapContainerRef = useRef<HTMLDivElement>(null)
