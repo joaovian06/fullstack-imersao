@@ -14,12 +14,12 @@ export function AdminPage() {
     socket.connect();
 
     socket.on(
-      'admin-new-points', 
+      "admin-new-points", 
       async (data: { route_id: string; lat: number; lng: number; }) => {
         // console.log(data);
         
         if (!map?.hasRoute(data.route_id)) {
-          const response = await fetch(`http://localhost:3000/routes/${data.routeId}`);          
+          const response = await fetch(`http://localhost:3001/api/routes/${data.routeId}`);          
           const route: Route = await response.json();
           console.log(data)
           map?.removeRoute(data.route_id)
